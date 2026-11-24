@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1. Makes the page fit phone screens. Without it, nothing is responsive. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yuxuan Kopi Tiam | Contact</title>
+
+    <!-- 2. Bootstrap CSS: must come BEFORE our own CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- 3. Our own CSS: comes AFTER, so our styles can override Bootstrap -->
+    <link href="css/style.css" rel="stylesheet">
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Yuxuan Kopi Tiam</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Menu</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="menu-drinks.html">Drinks</a></li>
+                            <li><a class="dropdown-item" href="menu-food.html">Food</a></li>
+                            <li><a class="dropdown-item" href="menu-soup.html">Soup</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Call me.html">Call me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-body-tertiary py-5">
+        <div class="container py-lg-4">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8 text-center">
+                    <h1 class="display-6 fw-bold">Contact us</h1>
+                    <p class="lead mb-0">Questions, group bookings or feedback: send us a message.</p>
+                </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row g-4 g-lg-5">
+            <!-- 3a. CONTACT FORM: checked by js/script.js -->
+            <div class="col-12 col-lg-7">
+                <h2 class="h3 mb-3">Send us a message</h2>
+                <form id="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your name</label>
+                        <input type="text" class="form-control" id="name" required minlength="2">
+                        <div class="invalid-feedback">Please type your name.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                        <div class="invalid-feedback">Please type an email like name@example.com.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone (optional)</label>
+                        <input type="tel" class="form-control" id="phone" pattern="01[0-9]-?[0-9]{7,8}"
+                            placeholder="012-3456789">
+
+                        <div class="invalid-feedback">Type a mobile number, like 012-3456789.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="topic" class="form-label">Topic</label>
+                        <select class="form-select" id="topic" required>
+                            <option value="">Choose a topic</option>
+                            <option>Group booking (6 or more)</option>
+                            <option>Feedback</option>
+                            <option>Something else</option>
+                        </select>
+                        <div class="invalid-feedback">Please choose a topic.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" required minlength="10"></textarea>
+                        <div class="invalid-feedback">Please write at least 10 characters.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-bs-toggle="tooltip"
+                        data-bs-title="We reply within 2 working days">Send message</button>
+                    <div id="form-thanks" class="alert alert-success d-none mt-3" role="alert">
+                        Thank you! We will reply within 2 working days.
+                    </div>
+                </form>
+            </div>
+            <!-- 3b. FAQ: an accordion -->
+            <div class="col-12 col-lg-5">
+                <h2 class="h3 mb-3">Questions people ask</h2>
+                <div class="accordion" id="faq">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq1" aria-expanded="true">
+                                Do you take bookings?
+                            </button>
+                        </h3>
+                        <div id="faq1" class="accordion-collapse collapse show">
+                            <div class="accordion-body">For groups of 6 or more. Choose Group booking in the form.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq2" aria-expanded="false">
+                                Is there Wi-Fi?
+                            </button>
+                        </h3>
+                        <div id="faq2" class="accordion-collapse collapse">
+                            <div class="accordion-body">Yes, free Wi-Fi. Ask at the counter for the password.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#faq3" aria-expanded="false">
+                                Do you sell coffee beans?
+                            </button>
+                        </h3>
+                        <div id="faq3" class="accordion-collapse collapse">
+                            <div class="accordion-body">Yes, our charcoal-roasted beans come in 250 g bags.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <small>&copy; 2030 Yuxuan Kopi Tiam</small>
+        </div>
+    </footer>
+    <!-- 4. Bootstrap JavaScript: at the end of body -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- 5. Our own JavaScript -->
+    <script src="js/script.js"></script>
+    </body>
+
+</html>

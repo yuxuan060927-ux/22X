@@ -1,0 +1,89 @@
+:root {
+--test-colour: #ceb88c;
+--brand-espresso: #7d6742; /* navbar, footer, headings */
+--brand-cream: #F7F1E8; /* page background */
+--brand-charcoal: #debbbb; /* body text */
+--brand-orange: #d7936c; /* buttons */
+--font-heading: "Agrave Pro", Georgia, serif;
+--font-body: "Inter", Arial, sans-serif;
+--brand-radius: 8px; /* rounded corners */
+
+--bs-body-bg: var(--brand-cream);
+--bs-body-color: var(--brand-charcoal);
+--bs-body-font-family: var(--font-body);
+--bs-body-font-size: 1rem;
+--bs-body-line-height: 1.6;
+--bs-heading-color: var(--brand-espresso);
+--bs-border-radius: var(--brand-radius);
+
+--bs-border-radius: var(--brand-radius);
+--bs-dark-rgb: 59, 42, 26;
+--bs-light-rgb: 255, 255, 255;
+--bs-tertiary-bg-rgb: 255, 255, 255;
+--bs-link-color-rgb: 164, 80, 30;
+--bs-link-hover-color-rgb: 59, 42, 26;
+}
+h1, h2, .navbar-brand {
+font-family: var(--font-heading);
+color: var(--test-colour);
+}
+body {
+border-top: 12px solid var(--test-colour);
+}
+
+/* 4. DARK PARTS (the navbar): the Menu dropdown too */
+[data-bs-theme="dark"] {
+--bs-body-bg: var(--brand-espresso);
+}
+
+/* 5. BUTTONS: my button colour */
+.btn-primary {
+--bs-btn-focus-shadow-rgb: 164, 80, 30;
+--bs-btn-bg: var(--brand-orange);
+--bs-btn-border-color: var(--brand-orange);
+--bs-btn-hover-bg: var(--brand-espresso);
+--bs-btn-hover-border-color: var(--brand-espresso);
+--bs-btn-active-bg: var(--brand-espresso);
+--bs-btn-active-border-color: var(--brand-espresso);
+}
+
+.btn-outline-primary {
+--bs-btn-focus-shadow-rgb: 164, 80, 30;
+--bs-btn-color: var(--brand-orange);
+--bs-btn-border-color: var(--brand-orange);
+--bs-btn-hover-bg: var(--brand-orange);
+--bs-btn-hover-border-color: var(--brand-orange);
+--bs-btn-active-bg: var(--brand-espresso);
+--bs-btn-active-border-color: var(--brand-espresso);
+}
+
+/* 6. SPACING: my spacing */
+.container {
+--bs-gutter-x: 3rem; /* page sides: 24 px each */
+}
+.navbar {
+--bs-navbar-padding-y: 3rem; /* navbar: 16 px top and bottom */
+}
+
+/* 7. CARDS AND PHOTOS: white cards, same-shape photos */
+.card {
+--bs-card-bg: white;
+}
+.card-img-top,
+.carousel-item img {
+aspect-ratio: 5 / 7;
+object-fit: cover;
+}
+
+/* 8. TABS: my colours */
+.nav-tabs {
+--bs-nav-link-color: var(--brand-orange);
+--bs-nav-link-hover-color: var(--brand-espresso);
+}
+
+/* 9. ACCORDION: my colours */
+.accordion {
+--bs-accordion-bg: rgb(113, 105, 86);
+--bs-accordion-active-bg: rgb(217, 204, 181);
+--bs-accordion-active-color: var(--brand-espresso);
+}

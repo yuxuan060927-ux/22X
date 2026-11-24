@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1. Makes the page fit phone screens. Without it, nothing is responsive. -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>Kopi Kampung | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agrave+Pro:wght@100..700&display=swap" rel="stylesheet">
+
+
+    <!-- 2. Bootstrap CSS: must come BEFORE our own CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 3. Our own CSS: comes AFTER, so our styles can override Bootstrap -->
+    <link href="css/style.css" rel="stylesheet">
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Kopi Kampung</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Menu</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="menu-drinks.html">Drinks</a></li>
+                            <li><a class="dropdown-item" href="menu-food.html">Food</a></li>
+                            <li><a class="dropdown-item" href="menu-soup.html">Soup</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Call me.html">Call me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-body-tertiary py-5">
+        <div class="container py-lg-4">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8 text-center">
+                    <p class="text-uppercase small fw-semibold text-body-secondary mb-2">Heritage café · Ipoh, Perak</p>
+                    <h1 class="display-5 fw-bold mb-3">Kopi the way Ipoh remembers it</h1>
+                    <p class="lead mb-4">Charcoal-roasted beans, kaya toast made every morning,
+                        and a quiet corner to stay a while.</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <a href="menu-drinks.html" class="btn btn-primary btn-lg px-4">See the menu</a>
+                        <button type="button" class="btn btn-outline-primary btn-lg px-4" data-bs-toggle="modal"
+                            data-bs-target="#findUsModal">Find us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <h2 class="text-center mb-4">
+            Why people keep coming back
+        </h2>
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="image/ap.jpg" class="card-img-top" alt="Kopi on a marble table">
+                    <div class="card-body">
+                        <h3 class="card-title h5">Traditional Kopi</h3>
+                        <p class="card-text">Freshly roasted beans, brewed the old way.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                    <img src="image/ap2.jpg" class="card-img-top" alt="Kaya toast with butter">
+                    <div class="card-body">
+                        <h3 class="card-title h5">Local Breakfast</h3>
+                        <p class="card-text">Kaya toast, half-boiled eggs and nasi lemak.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4">
+                <div class="card h-100">
+                    <img src="image/ap3.jpg" class="card-img-top" alt="Old patterned floor tiles">
+                    <div class="card-body">
+                        <h3 class="card-title h5">Cosy Space</h3>
+                        <p class="card-text">Free Wi-Fi and quiet corners to work or study.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- PRACTICE: a row with no container -->
+     <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <p>Practice box 1</p>
+        </div>
+        <div class="col-12 col-md-6">
+            <p>Practice box 2</p>
+        </div>
+    </div>
+
+    <!-- PRACTICE: delete after the Try it -->
+    <img src="images/counter.jpg" class="img-fluid" alt="Practice photo">
+    <!-- CAROUSEL: photos that slide -->
+    <h2 class="text-center mt-5 mb-4">A look inside</h2>
+    <div id="shopCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#shopCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Photo 1"></button>
+            <button type="button" data-bs-target="#shopCarousel" data-bs-slide-to="1" aria-label="Photo 2"></button>
+
+            <button type="button" data-bs-target="#shopCarousel" data-bs-slide-to="2" aria-label="Photo 3"></button>
+
+        </div>
+        <div class="carousel-inner rounded">
+            <div class="carousel-item active">
+                <img src="image/ap2.jpg" class="d-block w-100" alt="Kopi Kampung shopfront">
+                <div class="carousel-caption d-none d-md-block">
+                    <p class="mb-0">Our shopfront in Ipoh Old Town</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image/ppw1.jpg" class="d-block w-100" alt="Front counter">
+            </div>
+            <div class="carousel-item">
+                <img src="image/ap.jpg" class="d-block w-100" alt="Charcoal roaster">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#shopCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#shopCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- TABS: one panel at a time -->
+    <h2 class="text-center mt-5 mb-4">Popular right now</h2>
+    <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+            <button class="nav-link active" type="button" data-bs-toggle="tab" data-bs-target="#drinks">Drinks</button>
+
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" type="button" data-bs-toggle="tab" data-bs-target="#food">Food</button>
+
+        </li>
+    </ul>
+
+    <div class="tab-content pt-4 text-center">
+        <div class="tab-pane fade show active" id="drinks">
+            <p>Ipoh white coffee · Kopi O · Teh tarik · Iced Milo</p>
+        </div>
+        <div class="tab-pane fade" id="food">
+            <p>Kaya butter toast · Half-boiled eggs · Nasi lemak</p>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 text-center">
+                <p class="mb-3"><span class="badge text-bg-success">Open now</span>
+                    Open daily, 7 am to 6 pm. Closed on Tuesdays.</p>
+            </div>
+
+            <footer class="bg-dark text-white py-4">
+                <div class="container text-center">
+                    <small>&copy; 2026 Kopi Kampung</small>
+                </div>
+            </footer>
+
+            <!-- 5. MODAL: opens from the Find us button -->
+            <div class="modal fade" id="findUsModal" tabindex="-1" aria-labelledby="findUsTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title h5" id="findUsTitle">Find us</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="mb-1"><b>Ipoh Old Town, Perak</b></p>
+                            <p>Open daily, 7 am to 6 pm. Closed on Tuesdays.</p>
+                            <a href="contact.html" class="btn btn-primary">Get directions</a>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#bookModal">Book a table</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. BOOKING MODAL: a form inside a modal -->
+            <div class="modal fade" id="bookModal" tabindex="-1" aria-labelledby="bookTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <form id="book-form" class="modal-content p-4" novalidate>
+                        <h2 class="h5 mb-3" id="bookTitle">Book a table</h2>
+                        <label for="book-name" class="form-label">Your name</label>
+                        <input type="text" class="form-control mb-3" id="book-name" required>
+                        <label for="book-date" class="form-label">Date</label>
+                        <input type="date" class="form-control mb-3" id="book-date" required>
+                        <button type="submit" class="btn btn-primary">Book</button>
+                        <button type="button" class="btn btn-link" data-bs-dismiss="modal">Cancel</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- 4. Bootstrap JavaScript: at the end of body -->
+            <script src="js/bootstrap.bundle.min.js"></script>
+            <!-- 5. Our own JavaScript -->
+            <script src="js/script.js"></script>
+            </body>
+
+</html>

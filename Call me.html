@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1. Makes the page fit phone screens. Without it, nothing is responsive. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yuxuan Kopi Tiam | Call me</title>
+
+    <!-- 2. Bootstrap CSS: must come BEFORE our own CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- 3. Our own CSS: comes AFTER, so our styles can override Bootstrap -->
+    <link href="css/style.css" rel="stylesheet">
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Yuxuan Kopi Tiam</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Menu</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="menu-drinks.html">Drinks</a></li>
+                            <li><a class="dropdown-item" href="menu-food.html">Food</a></li>
+                            <li><a class="dropdown-item" href="menu-soup.html">Soup</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active"   aria-current="page" href="Call me.html">Call me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-body-tertiary py-5">
+        <div class="container py-lg-4">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8 text-center">
+                    <p class="text-uppercase small fw-semibold text-body-secondary mb-2">Heritage café · Ipoh, Perak</p>
+                    <h1 class="display-5 fw-bold mb-3">IF YOU WANT, THAN CALL ME</h1>
+                    <p class="lead mb-4">We are a professional team.</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <a href="menu-drinks.html" class="btn btn-success btn-lg px-4">See the menu</a>
+                        <a href="contact.html" class="btn btn-outline-dark btn-lg px-4">Find us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <h2 class="text-center mb-4">
+            Why people keep coming back
+        </h2>
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="p-4 bg-light border rounded h-100">
+                    <h3 class="h5">Have meowwww</h3>
+                    <p>MeowwwwwMeowwwwwMeowwwww</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="p-4 bg-light border rounded h-100">
+                    <h2 class="h5">Aroi Breakfast</h2>
+                    <p>Moookata, Thai milk teaaa</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4">
+                <div class="p-4 bg-light border rounded h-100">
+                    <h2 class="h5">Cosy Space</h2>
+                    <p>Free Wi-Fi and quiet corners to work or study.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <small>&copy; 2030 Yuxuan Kopi Tiam</small>
+        </div>
+    </footer>
+    <!-- 4. Bootstrap JavaScript: at the end of body -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- 5. Our own JavaScript -->
+    <script src="js/script.js"></script>
+    </body>
+
+</html>
